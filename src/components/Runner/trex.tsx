@@ -1,23 +1,22 @@
-import Sprite from './sprite'
-
 import defaultTrexImg from './images/tRex.png'
+import didItAgain from './sounds/i-did-it-again.mp3'
+import fnising1 from './sounds/Fnising-short-1.mp3'
+import fnising2 from './sounds/Fnising-short-2.mp3'
+import gotYou from './sounds/got-you-short.mp3'
+import hitSound from './sounds/Fuck-short.mp3'
+import iamAndrea from './sounds/im-andrea-short.mp3'
+import iamWoman from './sounds/im-a-woman-short.mp3'
+import noMan from './sounds/no-need-no-man.mp3'
+import ohNo from './sounds/oh_no-short.mp3'
+import opps from './sounds/oops-short.mp3'
+import promp from './sounds/promp-short.mp3'
+import snap from './sounds/snap-short.mp3'
+import Sprite from './sprite'
 import tRexCrashImg from './images/trex_crash.png'
 import tRexDuck1Img from './images/trex_duck_1.png'
 import tRexDuck2Img from './images/trex_duck_2.png'
 import tRexFistFrameImg from './images/trex_first_frame.png'
-import promp from './sounds/promp-short.mp3'
-import fnising1 from './sounds/Fnising-short-1.mp3'
-import fnising2 from './sounds/Fnising-short-2.mp3'
-import gotYou from './sounds/got-you-short.mp3'
-import didItAgain from './sounds/i-did-it-again.mp3'
-import iamWoman from './sounds/im-a-woman-short.mp3'
-import iamAndrea from './sounds/im-andrea-short.mp3'
-import noMan from './sounds/no-need-no-man.mp3'
-import ohNo from './sounds/oh_no-short.mp3'
-import opps from './sounds/oops-short.mp3'
-import snap from './sounds/snap-short.mp3'
 import youKnow from './sounds/you-know-short.mp3'
-import hitSound from './sounds/Fuck-short.mp3'
 
 const STATUS = Object.freeze({
   START: 'START',
@@ -28,9 +27,9 @@ const STATUS = Object.freeze({
 })
 
 const jumpSound = (): string => {
-  let sounds: string[] = [promp, fnising1, fnising2, gotYou, didItAgain, iamWoman, iamAndrea, noMan, ohNo, opps, snap, youKnow];
+  const sounds: string[] = [promp, fnising1, fnising2, gotYou, didItAgain, iamWoman, iamAndrea, noMan, ohNo, opps, snap, youKnow]
   return sounds[Math.floor(Math.random() * sounds.length)]
-};
+}
 
 class Trex extends Sprite {
   jumpVelocity: number = 0
