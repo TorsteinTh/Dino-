@@ -1,59 +1,36 @@
-# react-chrome-dino
+# 🦖 T-Rex Runner
 
-## Usage:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![](screenshots/screenshot.png)
 
-Demo: https://mhasbini.com/miscs/react-chrome-dino-demo/index.html
 
-Install:
+### Introduction
 
-```
-yarn add react-chrome-dino
-```
+T-Rex Chrome Offline Game made with **React + TypeScript**
 
-```js
-import React from 'react';
-import ChromeDinoGame from 'react-chrome-dino';
 
-const App = () => (
-  <ChromeDinoGame />
-);
 
-export default App;
+### How to Start
+
+```bash
+# install dependencies
+yarn
+
+# serve with hot reload at localhost:3000
+yarn start
 ```
 
-Check [`src/demo`](src/demo) for a usage example.
 
-## License
 
-This library is licensed under MIT.
+### Version Updates
 
-The game javascript & css is licensed under BSD as follow:
+27/05/19: Initial version - only t-rex can **jump** with the **space bar**
 
-```
-// Copyright (c) 2014 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file here: https://cs.chromium.org/chromium/src/LICENSE. 
-```
 
-## Available Scripts
 
-In the project directory, you can run:
+### References
 
-### `npm start` or `yarn start`
+- [Chromium](https://cs.chromium.org/chromium/src/components/neterror/resources/offline.js)
+- [MagicCube/tensorflow-rex-run](https://github.com/MagicCube/tensorflow-rex-run/tree/master/src/game)
 
-Runs the library in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### `npm run test` or `yarn run test`
-
-Runs the test watcher in an interactive mode.
-
-### `npm run build` or `yarn build`
-
-Builds the library for production to the `build` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### `npm publish`
-
-Publishes the library to NPM.
+- [Lawvs/Dino](https://github.com/lawvs/Dino/tree/master/src)
