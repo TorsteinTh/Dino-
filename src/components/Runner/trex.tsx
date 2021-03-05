@@ -5,8 +5,19 @@ import tRexCrashImg from './images/trex_crash.png'
 import tRexDuck1Img from './images/trex_duck_1.png'
 import tRexDuck2Img from './images/trex_duck_2.png'
 import tRexFistFrameImg from './images/trex_first_frame.png'
-import jumpSound from './sounds/button-press.mp3'
-import hitSound from './sounds/hit.mp3'
+import promp from './sounds/promp-short.mp3'
+import fnising1 from './sounds/Fnising-short-1.mp3'
+import fnising2 from './sounds/Fnising-short-2.mp3'
+import gotYou from './sounds/got-you-short.mp3'
+import didItAgain from './sounds/i-did-it-again.mp3'
+import iamWoman from './sounds/im-a-woman-short.mp3'
+import iamAndrea from './sounds/im-andrea-short.mp3'
+import noMan from './sounds/no-need-no-man.mp3'
+import ohNo from './sounds/oh_no-short.mp3'
+import opps from './sounds/oops-short.mp3'
+import snap from './sounds/snap-short.mp3'
+import youKnow from './sounds/you-know-short.mp3'
+import hitSound from './sounds/Fuck-short.mp3'
 
 const STATUS = Object.freeze({
   START: 'START',
@@ -15,6 +26,11 @@ const STATUS = Object.freeze({
   DUCK_2: 'DUCK_2',
   CRASH: 'CRASH',
 })
+
+const jumpSound = (): string => {
+  let sounds: string[] = [promp, fnising1, fnising2, gotYou, didItAgain, iamWoman, iamAndrea, noMan, ohNo, opps, snap, youKnow];
+  return sounds[Math.floor(Math.random() * sounds.length)]
+};
 
 class Trex extends Sprite {
   jumpVelocity: number = 0
@@ -40,7 +56,7 @@ class Trex extends Sprite {
     JUMP_SPEED: 550,
     SPEED: 70, // move when you start the game for the first time
     SOUNDS: {
-      JUMP: jumpSound,
+      JUMP: jumpSound(),
       HIT: hitSound,
     },
   }
