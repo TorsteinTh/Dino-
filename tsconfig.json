@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "build/dist",
+    "outDir": "build/",
     "module": "esnext",
     "target": "es5",
     "lib": ["es6", "dom"],
@@ -10,7 +10,7 @@
     "jsx": "react",
     "moduleResolution": "node",
     "rootDir": "src",
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src/**/*.ts",
